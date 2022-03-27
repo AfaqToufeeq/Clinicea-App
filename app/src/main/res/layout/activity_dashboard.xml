@@ -1,9 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Dashboard.dashboardActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:cardElevation="4dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/clinic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:focusable="true"
+            android:fontFamily="@font/poppins_semibold"
+            android:letterSpacing="0.02"
+            android:text="Clinic"
+            android:textColor="@color/jerBlue3"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/clinic"
+            android:focusable="true"
+            android:fontFamily="@font/poppins_semibold"
+            android:letterSpacing="0.02"
+            android:text="ea"
+
+            android:textColor="@color/mainColorYellow"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+     <RelativeLayout
+         android:id="@+id/rec"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_gravity="center">
+
+         <TextView
+             android:id="@+id/profile"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_marginRight="20dp"
+             android:fontFamily="@font/poppins_semibold"
+             android:focusable="true"
+             android:padding="4dp"
+             android:text="Sign Up"
+             android:textSize="16dp"
+            />
+     </RelativeLayout>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomNavBar" />
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:elevation="20dp"
+            android:layout_alignParentBottom="true"
+            app:elevation="20dp"
+            app:itemIconTint="@color/jerBlue2"
+            app:itemRippleColor="@color/jerBlue2"
+            app:itemTextColor="@color/jerBlue2"
+            app:menu="@menu/bottom_nav_menu" />
+
+
+
+</RelativeLayout>

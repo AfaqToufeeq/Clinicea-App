@@ -2,10 +2,7 @@
     <string name="app_name">Clinicea</string>
     <string name="login_email_hint">Email</string>
     <string name="login_password_hint">Password</string>
-    
-    <string-array name="Gender">
-        <item>Male</item>
-        <item>Female</item>
-        <item>Prefer Not to Say</item>
-    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
