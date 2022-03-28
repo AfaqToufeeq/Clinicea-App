@@ -21,7 +21,6 @@ public class dashboardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
         bottomNavigationView = findViewById(R.id.bottomNavBar);
-
         Fragment fragment=null;
         fragment= new HomeFragment();
         FragmentManager fm = getSupportFragmentManager();

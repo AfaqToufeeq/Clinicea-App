@@ -1,5 +1,6 @@
 package com.patient.clinicea.Dashboard;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +8,11 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.patient.clinicea.R;
 
@@ -16,6 +22,9 @@ import com.patient.clinicea.R;
  * create an instance of this fragment.
  */
 public class HomeFragment extends Fragment {
+    Spinner citySpinner;
+    TextView alreadyAccount;
+    String[] city = {"Islamabad", "Rawalpindi", "Faisalabad","Lahore"};
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -61,6 +70,26 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        View v= inflater.inflate(R.layout.fragment_home, container, false);
+        citySpinner = v.findViewById(R.id.citySpinner);
+
+        citySpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                Toast.makeText(getActivity(),city[i] , Toast.LENGTH_LONG).show();
+                ((TextView) adapterView.getChildAt(0)).setTextColor(Color.BLACK);
+                ((TextView) adapterView.getChildAt(0)).setTextSize(16);
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
+        ArrayAdapter ci = new ArrayAdapter(getActivity(),android.R.layout.simple_spinner_item,city);
+        ci.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        citySpinner.setAdapter(ci);
+
+        return v;
     }
 }

@@ -43,7 +43,7 @@ public class loginActivity extends AppCompatActivity {
             Window window = getWindow();
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
 //            window.setStatusBarColor(Color.TRANSPARENT);
-            window.setStatusBarColor(getResources().getColor(R.color.transparent));
+            window.setStatusBarColor(getResources().getColor(R.color.jerBlue2));
         }
     }
 
