@@ -4,10 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_marginLeft="10dp"
-    android:layout_marginRight="10dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
     android:orientation="vertical"
-
     tools:context=".Dashboard.HomeFragment">
 
     <LinearLayout
@@ -18,11 +17,11 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardElevation="9dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#F3F3F3"
             app:cardCornerRadius="8dp"
             android:elevation="9dp"
-            android:padding="8dp"
-            app:cardBackgroundColor="#FFECD5"
+            android:padding="12dp"
             android:layout_marginTop="18dp"
             android:layout_marginBottom="4dp"
             android:layout_marginLeft="4dp"
@@ -43,7 +42,7 @@
                     android:padding="6dp"
                     android:text="Select Your City"
                     android:textColor="@color/jerBlue2"
-                    android:textSize="20dp" />
+                    android:textSize="18dp" />
 
                 <TextView
                     android:id="@+id/desCity"
@@ -65,48 +64,77 @@
                     android:id="@+id/imageView"
                     android:layout_width="75dp"
                     android:layout_height="75dp"
-                    android:layout_centerInParent="true"
                     android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="10dp"
                     android:padding="2dp"
                     android:src="@drawable/city" />
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardElevation="9dp"
-            android:layout_marginTop="15dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp"
+            android:elevation="9dp"
+            android:padding="12dp"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="#F3F3F3"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:layout_marginTop="4dp">
+
+
+                <TextView
+                    android:id="@+id/textViewOffline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="2dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="6dp"
+                    android:text="E.Doctor Care"
+                    android:textColor="@color/jerBlue2"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewOffline"
+                    android:padding="2dp"
+                    android:text="Look for symptoms and signs of specific\ndisease and its treatment" />
+
+                <ImageView
+                    android:id="@+id/imageViewOffline"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="10dp"
+                    android:padding="2dp"
+                    android:src="@drawable/stethoscope" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="#F3F3F3"
             app:cardCornerRadius="8dp"
             android:layout_marginLeft="4dp"
             android:layout_marginRight="4dp"
-            android:layout_marginBottom="4dp"
-            android:padding="8dp"
-            >
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardElevation="9dp"
-                app:cardCornerRadius="4dp"
-                android:padding="4dp"
-                android:layout_margin="13dp">
-
-
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/white"
-                app:cardCornerRadius="9dp"
-                android:layout_marginTop="7dp"
-                android:layout_marginLeft="13dp"
-                android:layout_marginRight="13dp"
-                android:layout_marginBottom="13dp"
-
-                android:padding="4dp"
-                app:cardElevation="9dp">
-
+            android:padding="12dp">
                 <TextView
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
@@ -116,34 +144,35 @@
                     android:padding="6dp"
                     android:text="Looking for a doctor"
                     android:textColor="@color/jerBlue2"
-                    android:textSize="20dp"
+                    android:textSize="18dp"
                   />
 
                 <GridLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
                     android:alignmentMode="alignMargins"
                     android:columnCount="2"
-                   android:layout_marginTop="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_gravity="center_horizontal"
                     android:layout_marginBottom="12dp"
                     android:columnOrderPreserved="false"
                     android:rowCount="1">
 
                     <androidx.cardview.widget.CardView
                         android:layout_width="170dp"
-                        android:layout_height="200dp"
+                        android:layout_height="190dp"
                         android:layout_marginRight="13dp"
-                        app:cardElevation="6dp"
-                        app:cardCornerRadius="12dp"
+                        app:cardElevation="5dp"
+                        app:cardBackgroundColor="#FAFAFA"
+                        app:cardCornerRadius="6dp"
                         android:layout_gravity="center"
-                        app:cardBackgroundColor="#D5EDFF"
                         android:padding="4dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:gravity="center"
                             android:orientation="vertical">
                             <TextView
                                 android:layout_width="wrap_content"
@@ -152,8 +181,7 @@
                                 android:layout_marginTop="5dp"
                                 android:textSize="17dp"
                                 android:layout_gravity="center"
-                                android:textColor="@color/jerBlue2"
-                                android:textStyle="bold"/>
+                                android:textColor="@color/jerBlue2" />
 <!--                            <Button-->
 <!--                                android:layout_width="wrap_content"-->
 <!--                                android:layout_height="40dp"-->
@@ -175,12 +203,11 @@
                     </androidx.cardview.widget.CardView>
                     <androidx.cardview.widget.CardView
                         android:layout_width="170dp"
-                        android:layout_height="200dp"
-                        app:cardElevation="6dp"
-                        app:cardCornerRadius="12dp"
+                        android:layout_height="190dp"
+                        app:cardElevation="5dp"
+                        app:cardCornerRadius="6dp"
+                        app:cardBackgroundColor="#FAFAFA"
                         android:elevation="4dp"
-                        android:layout_gravity="center"
-                        app:cardBackgroundColor="#FFF5B7"
                         android:padding="4dp">
 
                         <LinearLayout
@@ -196,7 +223,7 @@
                                 android:textSize="17dp"
                                 android:layout_gravity="center"
                                 android:textColor="@color/jerBlue2"
-                                android:textStyle="bold"/>
+                                />
 <!--                            <Button-->
 <!--                                android:layout_width="wrap_content"-->
 <!--                                android:layout_height="40dp"-->
@@ -208,7 +235,6 @@
 
                             <ImageView
                                 android:id="@+id/btn_video"
-                                android:layout_marginTop="12dp"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:src="@drawable/videoconsultant" />
@@ -220,55 +246,19 @@
                 </GridLayout>
 
 
-            </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardElevation="9dp"
+                app:cardElevation="4dp"
                 app:cardCornerRadius="4dp"
-                app:cardBackgroundColor="#FFECEC"
+                app:cardBackgroundColor="#F3F3F3"
                 android:padding="4dp"
-                android:layout_marginTop="260dp"
+                android:layout_marginTop="255dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginBottom="8dp">
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="6dp"
-                    android:layout_marginTop="4dp">
 
-
-                    <TextView
-                        android:id="@+id/textViewOffline"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentTop="true"
-                        android:layout_marginLeft="3dp"
-                        android:fontFamily="@font/poppins_semibold"
-                        android:padding="6dp"
-                        android:text="E.Doctor Care"
-                        android:textColor="@color/jerBlue2"
-                        android:textSize="20dp"
-                     />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/textViewOffline"
-                        android:padding="2dp"
-                        android:text="Look for symptoms and signs of specific\ndisease and its treatment" />
-
-                    <ImageView
-                        android:id="@+id/imageViewOffline"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:layout_centerInParent="true"
-                        android:layout_alignParentRight="true"
-                        android:padding="2dp"
-                        android:src="@drawable/stethoscope" />
-                </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
 
@@ -277,12 +267,12 @@
                 android:layout_height="wrap_content"
                 app:cardElevation="4dp"
                 app:cardCornerRadius="4dp"
-                app:cardBackgroundColor="#E1FFE2"
                 android:padding="4dp"
-                android:layout_marginTop="370dp"
+                app:cardBackgroundColor="#FAFAFA"
+                android:layout_marginTop="240dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
-                android:layout_marginBottom="8dp">
+                android:layout_marginBottom="18dp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -300,15 +290,14 @@
                         android:padding="6dp"
                         android:text="Looking for labs"
                         android:textColor="@color/jerBlue2"
-                        android:textSize="20dp"
-                     />
+                        android:textSize="18dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/textViewLab"
                         android:padding="2dp"
-                        android:text="search for the laboratory near your locality" />
+                        android:text="search for the laboratory near your \nlocality" />
 
                     <ImageView
                         android:id="@+id/imageViewlab"
@@ -326,11 +315,12 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardElevation="9dp"
+            app:cardElevation="4dp"
             app:cardCornerRadius="8dp"
             android:elevation="9dp"
-            android:padding="8dp"
-            android:layout_marginTop="15dp"
+            android:padding="12dp"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="#F3F3F3"
             android:layout_marginBottom="4dp"
             android:layout_marginLeft="4dp"
             android:layout_marginRight="4dp">
@@ -352,8 +342,7 @@
                         android:padding="6dp"
                         android:text="Search Best Hospital"
                         android:textColor="@color/jerBlue2"
-                        android:textSize="20dp"
-                     />
+                        android:textSize="18dp" />
 
                     <TextView
                         android:id="@+id/desHosp"
@@ -366,19 +355,19 @@
 
                     <ImageView
                         android:id="@+id/imageViewHospital"
-                        android:layout_width="120dp"
-                        android:layout_height="120dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
                         android:layout_alignParentRight="true"
-                        android:padding="2dp"
                         android:layout_centerInParent="true"
+                        android:padding="2dp"
                         android:src="@drawable/hospital" />
 
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="42dp"
                         android:layout_below="@id/desHosp"
-                        android:layout_margin="5dp"
                         android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
                         android:layout_marginEnd="5dp"
                         android:layout_marginBottom="5dp"
                         android:background="@drawable/btn_style4"
