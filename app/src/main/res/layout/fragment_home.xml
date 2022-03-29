@@ -7,6 +7,7 @@
     android:layout_marginLeft="15dp"
     android:layout_marginRight="15dp"
     android:orientation="vertical"
+    app:cardBackgroundColor="#F3F3F3"
     tools:context=".Dashboard.HomeFragment">
 
     <LinearLayout
@@ -18,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardElevation="4dp"
-            app:cardBackgroundColor="#F3F3F3"
+
             app:cardCornerRadius="8dp"
             android:elevation="9dp"
             android:padding="12dp"
@@ -81,7 +82,6 @@
             android:elevation="9dp"
             android:padding="12dp"
             android:layout_marginTop="20dp"
-            app:cardBackgroundColor="#F3F3F3"
             android:layout_marginBottom="4dp"
             android:layout_marginLeft="4dp"
             android:layout_marginRight="4dp">
@@ -130,7 +130,6 @@
             android:layout_height="wrap_content"
             app:cardElevation="4dp"
             android:layout_marginTop="20dp"
-            app:cardBackgroundColor="#F3F3F3"
             app:cardCornerRadius="8dp"
             android:layout_marginLeft="4dp"
             android:layout_marginRight="4dp"
@@ -320,7 +319,6 @@
             android:elevation="9dp"
             android:padding="12dp"
             android:layout_marginTop="20dp"
-            app:cardBackgroundColor="#F3F3F3"
             android:layout_marginBottom="4dp"
             android:layout_marginLeft="4dp"
             android:layout_marginRight="4dp">
@@ -363,18 +361,18 @@
                         android:src="@drawable/hospital" />
 
                     <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="42dp"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
                         android:layout_below="@id/desHosp"
                         android:layout_marginStart="5dp"
                         android:layout_marginTop="5dp"
                         android:layout_marginEnd="5dp"
                         android:layout_marginBottom="5dp"
-                        android:background="@drawable/btn_style4"
-                        android:padding="12dp"
+                        android:background="@drawable/button_background_blue"
+                        android:padding="1dp"
                         android:text="Search Now"
                         android:textColor="#DFDFDF"
-                        android:textSize="14dp" />
+                        android:textSize="12dp" />
                 </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
