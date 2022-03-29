@@ -7,74 +7,91 @@
     android:layout_marginLeft="10dp"
     android:layout_marginRight="10dp"
     android:orientation="vertical"
-    android:background="@drawable/text2gradient"
+
     tools:context=".Dashboard.HomeFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardElevation="16dp"
+            app:cardElevation="9dp"
             app:cardCornerRadius="8dp"
+            android:elevation="9dp"
             android:padding="8dp"
-            android:layout_margin="4dp">
+            app:cardBackgroundColor="#FFECD5"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="6dp"
+                    android:text="Select Your City"
+                    android:textColor="@color/jerBlue2"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/desCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView"
+                    android:padding="2dp"
+                    android:text="Select the city to get the best doctors \nnear your locality" />
+
+                <Spinner
+                    android:id="@+id/citySpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/desCity"
+                    android:layout_marginTop="5dp"
+                    android:spinnerMode="dropdown" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:padding="2dp"
+                    android:src="@drawable/city" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="9dp"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="8dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="4dp"
+            android:padding="8dp"
+            >
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:cardElevation="9dp"
                 app:cardCornerRadius="4dp"
-                app:cardBackgroundColor="#DCF8C631"
                 android:padding="4dp"
                 android:layout_margin="13dp">
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="6dp"
-                    android:layout_marginTop="4dp">
-
-
-                    <TextView
-                        android:id="@+id/textView"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentTop="true"
-                        android:fontFamily="@font/poppins_semibold"
-                        android:padding="6dp"
-                        android:text="Select Your City"
-                        android:textColor="#1E1E1E"
-                        android:textSize="20dp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/desCity"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/textView"
-                        android:padding="2dp"
-                        android:text="Select the city to get the best doctors \nnear your locality" />
-
-                    <Spinner
-                        android:id="@+id/citySpinner"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/desCity"
-                        android:layout_marginTop="5dp"
-                        android:spinnerMode="dropdown" />
-
-                    <ImageView
-                        android:id="@+id/imageView"
-                        android:layout_width="75dp"
-                        android:layout_height="75dp"
-                        android:layout_centerInParent="true"
-                        android:layout_alignParentRight="true"
-                        android:padding="2dp"
-                        android:src="@drawable/city" />
-                </RelativeLayout>
 
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
@@ -82,10 +99,11 @@
                 android:layout_height="wrap_content"
                 android:background="@color/white"
                 app:cardCornerRadius="9dp"
+                android:layout_marginTop="7dp"
                 android:layout_marginLeft="13dp"
                 android:layout_marginRight="13dp"
                 android:layout_marginBottom="13dp"
-                android:layout_marginTop="160dp"
+
                 android:padding="4dp"
                 app:cardElevation="9dp">
 
@@ -97,9 +115,9 @@
                     android:fontFamily="@font/poppins_semibold"
                     android:padding="6dp"
                     android:text="Looking for a doctor"
-                    android:textColor="#1E1E1E"
+                    android:textColor="@color/jerBlue2"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                  />
 
                 <GridLayout
                     android:layout_width="wrap_content"
@@ -119,7 +137,7 @@
                         app:cardElevation="6dp"
                         app:cardCornerRadius="12dp"
                         android:layout_gravity="center"
-                        app:cardBackgroundColor="#94C5EC"
+                        app:cardBackgroundColor="#D5EDFF"
                         android:padding="4dp">
 
                         <LinearLayout
@@ -132,22 +150,21 @@
                                 android:layout_height="wrap_content"
                                 android:text="Physical Consultant"
                                 android:layout_marginTop="5dp"
-                                android:textSize="15dp"
+                                android:textSize="17dp"
                                 android:layout_gravity="center"
-                                android:textColor="#1E1E1E"
+                                android:textColor="@color/jerBlue2"
                                 android:textStyle="bold"/>
-                            <Button
-                                android:layout_width="wrap_content"
-                                android:layout_height="40dp"
-                                android:layout_marginTop="5dp"
-                                android:text="Book Now"
-                                android:textSize="10dp"
-                                android:background="@drawable/btn_style3"
-                                android:textColor="@color/white"/>
+<!--                            <Button-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="40dp"-->
+<!--                                android:layout_marginTop="5dp"-->
+<!--                                android:text="Book Now"-->
+<!--                                android:textSize="10dp"-->
+<!--                                android:background="@drawable/btn_style3"-->
+<!--                                android:textColor="@color/white"/>-->
 
                             <ImageView
                                 android:id="@+id/btn_firstAid"
-                                android:layout_marginTop="12dp"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:src="@drawable/physicalconsultant" />
@@ -163,7 +180,7 @@
                         app:cardCornerRadius="12dp"
                         android:elevation="4dp"
                         android:layout_gravity="center"
-                        app:cardBackgroundColor="#FFEC6F"
+                        app:cardBackgroundColor="#FFF5B7"
                         android:padding="4dp">
 
                         <LinearLayout
@@ -176,18 +193,18 @@
                                 android:layout_height="wrap_content"
                                 android:text="Video Consultant"
                                 android:layout_marginTop="5dp"
-                                android:textSize="15dp"
+                                android:textSize="17dp"
                                 android:layout_gravity="center"
-                                android:textColor="#1E1E1E"
+                                android:textColor="@color/jerBlue2"
                                 android:textStyle="bold"/>
-                            <Button
-                                android:layout_width="wrap_content"
-                                android:layout_height="40dp"
-                                android:layout_marginTop="5dp"
-                                android:text="Book Now"
-                                android:textSize="10dp"
-                                android:background="@drawable/btn_style3_orange"
-                                android:textColor="@color/white"/>
+<!--                            <Button-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="40dp"-->
+<!--                                android:layout_marginTop="5dp"-->
+<!--                                android:text="Book Now"-->
+<!--                                android:textSize="10dp"-->
+<!--                                android:background="@drawable/btn_style3_orange"-->
+<!--                                android:textColor="@color/white"/>-->
 
                             <ImageView
                                 android:id="@+id/btn_video"
@@ -209,9 +226,9 @@
                 android:layout_height="wrap_content"
                 app:cardElevation="9dp"
                 app:cardCornerRadius="4dp"
-                app:cardBackgroundColor="#F8764D"
+                app:cardBackgroundColor="#FFECEC"
                 android:padding="4dp"
-                android:layout_marginTop="420dp"
+                android:layout_marginTop="260dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginBottom="8dp">
@@ -232,9 +249,9 @@
                         android:fontFamily="@font/poppins_semibold"
                         android:padding="6dp"
                         android:text="E.Doctor Care"
-                        android:textColor="#1E1E1E"
+                        android:textColor="@color/jerBlue2"
                         android:textSize="20dp"
-                        android:textStyle="bold" />
+                     />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -260,9 +277,9 @@
                 android:layout_height="wrap_content"
                 app:cardElevation="4dp"
                 app:cardCornerRadius="4dp"
-                app:cardBackgroundColor="#DC4CAF50"
+                app:cardBackgroundColor="#E1FFE2"
                 android:padding="4dp"
-                android:layout_marginTop="532dp"
+                android:layout_marginTop="370dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginBottom="8dp">
@@ -282,9 +299,9 @@
                         android:fontFamily="@font/poppins_semibold"
                         android:padding="6dp"
                         android:text="Looking for labs"
-                        android:textColor="#1E1E1E"
+                        android:textColor="@color/jerBlue2"
                         android:textSize="20dp"
-                        android:textStyle="bold" />
+                     />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -297,8 +314,8 @@
                         android:id="@+id/imageViewlab"
                         android:layout_width="85dp"
                         android:layout_height="85dp"
-                        android:layout_centerInParent="true"
                         android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
                         android:padding="2dp"
                         android:src="@drawable/lab" />
                 </RelativeLayout>
@@ -309,10 +326,11 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardElevation="16dp"
+            app:cardElevation="9dp"
             app:cardCornerRadius="8dp"
+            android:elevation="9dp"
             android:padding="8dp"
-            android:layout_marginTop="18dp"
+            android:layout_marginTop="15dp"
             android:layout_marginBottom="4dp"
             android:layout_marginLeft="4dp"
             android:layout_marginRight="4dp">
@@ -333,9 +351,9 @@
                         android:fontFamily="@font/poppins_semibold"
                         android:padding="6dp"
                         android:text="Search Best Hospital"
-                        android:textColor="#1E1E1E"
+                        android:textColor="@color/jerBlue2"
                         android:textSize="20dp"
-                        android:textStyle="bold" />
+                     />
 
                     <TextView
                         android:id="@+id/desHosp"
