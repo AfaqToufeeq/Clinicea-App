@@ -1,8 +1,10 @@
 package com.patient.clinicea.Dashboard;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -10,10 +12,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.patient.clinicea.Consultation.SpecializationFieldActivity;
+import com.patient.clinicea.Hospitals.hospitals_Activity;
 import com.patient.clinicea.R;
 
 /**
@@ -23,6 +28,7 @@ import com.patient.clinicea.R;
  */
 public class HomeFragment extends Fragment {
     Spinner citySpinner;
+    CardView phy_Consultant;
     TextView alreadyAccount;
     String[] city = {"Islamabad", "Rawalpindi", "Faisalabad","Lahore"};
 
@@ -72,6 +78,23 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         View v= inflater.inflate(R.layout.fragment_home, container, false);
         citySpinner = v.findViewById(R.id.citySpinner);
+        phy_Consultant = v.findViewById(R.id.phy_Consultant);
+        Button btn_hopitals = v.findViewById(R.id.btn_hospitals);
+
+        btn_hopitals.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), hospitals_Activity.class));
+            }
+        });
+
+        phy_Consultant.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), SpecializationFieldActivity.class));
+            }
+        });
+
 
         citySpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override

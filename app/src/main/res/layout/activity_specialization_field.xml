@@ -1,0 +1,2183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/mainColorWhite"
+    tools:context=".Consultation.SpecializationFieldActivity">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            app:cardElevation="4dp">
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:padding="5dp"
+            android:weightSum="3">
+
+            <ImageView
+                android:id="@+id/back2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:onClick="btn_dashboard"
+                android:layout_marginRight="70dp"
+                app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="Find a"
+                android:textColor="@color/jerBlue2"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text=" doctor"
+                android:layout_marginRight="80dp"
+                android:textColor="@color/mainColorYellow"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_baseline_person_pin_24" />
+
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:onClick="btn_moveToProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="6dp"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="12dp"
+                android:padding="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:padding="6dp"
+                        android:text="Seach by Specialization"
+                        android:textColor="@color/jerBlue2"
+                        android:textSize="18dp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_marginTop="5dp"
+                        app:cardBackgroundColor="#F4F4F4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:descendantFocusability="blocksDescendants"
+                            android:focusable="false"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_weight="18">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:onClick="btn_Dermatologist"
+                                android:gravity="center"
+                                android:layout_marginRight="5dp"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Dermatologist"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/gynecologist"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Gynecologist"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_marginTop="20dp"
+                        app:cardBackgroundColor="#F4F4F4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:descendantFocusability="blocksDescendants"
+                            android:focusable="false"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_weight="18">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:gravity="center"
+                                android:layout_marginRight="5dp"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/pediatrician"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Prediatrician"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/surgeon"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Orthopedic Surgeon"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_marginTop="20dp"
+                        app:cardBackgroundColor="#F4F4F4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:descendantFocusability="blocksDescendants"
+                            android:focusable="false"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_weight="18">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:gravity="center"
+                                android:layout_marginRight="5dp"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Neurologist"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Urologist"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_marginTop="20dp"
+                        app:cardBackgroundColor="#F4F4F4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:descendantFocusability="blocksDescendants"
+                            android:focusable="false"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_weight="18">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:gravity="center"
+                                android:layout_marginRight="5dp"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Psychiatrist"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dentist"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Dentist"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_marginTop="20dp"
+                        app:cardBackgroundColor="#F4F4F4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:descendantFocusability="blocksDescendants"
+                            android:focusable="false"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_weight="18">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:gravity="center"
+                                android:layout_marginRight="5dp"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Cardiologist"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Pulmonologist"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_marginTop="20dp"
+                        app:cardBackgroundColor="#F4F4F4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:descendantFocusability="blocksDescendants"
+                            android:focusable="false"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_weight="18">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:gravity="center"
+                                android:layout_marginRight="5dp"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="General Surgeon"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Nephrologist"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_marginTop="20dp"
+                        app:cardBackgroundColor="#F4F4F4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:descendantFocusability="blocksDescendants"
+                            android:focusable="false"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_weight="18">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:gravity="center"
+                                android:layout_marginRight="5dp"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Operative Dentist"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Psycologist"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_marginTop="20dp"
+                        app:cardBackgroundColor="#F4F4F4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:descendantFocusability="blocksDescendants"
+                            android:focusable="false"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_weight="18">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:gravity="center"
+                                android:layout_marginRight="5dp"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Nutritionist"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Homeopath"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_marginTop="20dp"
+                        app:cardBackgroundColor="#F4F4F4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:descendantFocusability="blocksDescendants"
+                            android:focusable="false"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_weight="18">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:gravity="center"
+                                android:layout_marginRight="5dp"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Dietitian"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Neurosurgeon"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_marginTop="20dp"
+                        app:cardBackgroundColor="#F4F4F4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:descendantFocusability="blocksDescendants"
+                            android:focusable="false"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_weight="18">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:gravity="center"
+                                android:layout_marginRight="5dp"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Thoracic Surgeon"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Radiologist"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_marginTop="20dp"
+                        app:cardBackgroundColor="#F4F4F4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:descendantFocusability="blocksDescendants"
+                            android:focusable="false"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_weight="18">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:gravity="center"
+                                android:layout_marginRight="5dp"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Comsetic Dentist"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Physiotherapist"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_marginTop="20dp"
+                        app:cardBackgroundColor="#F4F4F4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:descendantFocusability="blocksDescendants"
+                            android:focusable="false"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_weight="18">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:gravity="center"
+                                android:layout_marginRight="5dp"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="ENT Specialist"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="General Physician"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_marginTop="20dp"
+                        app:cardBackgroundColor="#F4F4F4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:descendantFocusability="blocksDescendants"
+                            android:focusable="false"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_weight="18">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:gravity="center"
+                                android:layout_marginRight="5dp"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Eye Specialist"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Gastroenterologist"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_marginTop="20dp"
+                        app:cardBackgroundColor="#F4F4F4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:descendantFocusability="blocksDescendants"
+                            android:focusable="false"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_weight="18">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:gravity="center"
+                                android:layout_marginRight="5dp"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Diabetologist"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Counselor"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_marginTop="20dp"
+                        app:cardBackgroundColor="#F4F4F4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:descendantFocusability="blocksDescendants"
+                            android:focusable="false"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_weight="18">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:gravity="center"
+                                android:layout_marginRight="5dp"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Eye Surgeon"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Chiropractor"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_marginTop="20dp"
+                        app:cardBackgroundColor="#F4F4F4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:descendantFocusability="blocksDescendants"
+                            android:focusable="false"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_weight="18">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:gravity="center"
+                                android:layout_marginRight="5dp"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Rheumatologist"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Obstetrician"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_marginTop="20dp"
+                        app:cardBackgroundColor="#F4F4F4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:descendantFocusability="blocksDescendants"
+                            android:focusable="false"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_weight="18">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:gravity="center"
+                                android:layout_marginRight="5dp"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Plastic Surgeon"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Physician"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                android:onClick="btn_moveToProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="6dp"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:padding="12dp"
+                android:layout_marginTop="34dp"
+                android:layout_marginBottom="14dp"
+                android:layout_marginLeft="4dp"
+
+                android:layout_marginRight="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:padding="6dp"
+                        android:text="Disease Treatments"
+                        android:textColor="@color/jerBlue2"
+                        android:textSize="18dp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_marginTop="5dp"
+                        app:cardBackgroundColor="#F4F4F4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:descendantFocusability="blocksDescendants"
+                            android:focusable="false"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_weight="18">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:gravity="center"
+                                android:layout_marginRight="5dp"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Arthritis"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Hypertension"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_marginTop="20dp"
+                        app:cardBackgroundColor="#F4F4F4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:descendantFocusability="blocksDescendants"
+                            android:focusable="false"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_weight="18">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:gravity="center"
+                                android:layout_marginRight="5dp"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Infectious Diseases"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Anemia"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_marginTop="20dp"
+                        app:cardBackgroundColor="#F4F4F4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:descendantFocusability="blocksDescendants"
+                            android:focusable="false"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_weight="18">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:gravity="center"
+                                android:layout_marginRight="5dp"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Skin Diseases"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Menupause"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_marginTop="20dp"
+                        app:cardBackgroundColor="#F4F4F4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:descendantFocusability="blocksDescendants"
+                            android:focusable="false"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_weight="18">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:gravity="center"
+                                android:layout_marginRight="5dp"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Chicken Pox"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Abdomen Pain"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_marginTop="20dp"
+                        app:cardBackgroundColor="#F4F4F4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:descendantFocusability="blocksDescendants"
+                            android:focusable="false"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_weight="18">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:gravity="center"
+                                android:layout_marginRight="5dp"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Diarrhea"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Common Cold"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_marginTop="20dp"
+                        app:cardBackgroundColor="#F4F4F4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:descendantFocusability="blocksDescendants"
+                            android:focusable="false"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_weight="18">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:gravity="center"
+                                android:layout_marginRight="5dp"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Fatigue"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="pneumonia"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_marginTop="20dp"
+                        app:cardBackgroundColor="#F4F4F4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:descendantFocusability="blocksDescendants"
+                            android:focusable="false"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_weight="18">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:gravity="center"
+                                android:layout_marginRight="5dp"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="diabetes Mellitus"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Sports Injury"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="6dp"
+                        app:cardElevation="6dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_marginTop="20dp"
+                        app:cardBackgroundColor="#F4F4F4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:descendantFocusability="blocksDescendants"
+                            android:focusable="false"
+                            android:clickable="false"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_weight="18">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:gravity="center"
+                                android:layout_marginRight="5dp"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Influenza"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Fever"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+</LinearLayout>

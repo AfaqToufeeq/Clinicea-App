@@ -21,6 +21,7 @@
         <entry key="..\:/Users/afaqt/AndroidStudioProjects/Clinicea/app/src/main/res/drawable/btn_style3_orange.xml" value="0.1405" />
         <entry key="..\:/Users/afaqt/AndroidStudioProjects/Clinicea/app/src/main/res/drawable/btn_style4.xml" value="0.1405" />
         <entry key="..\:/Users/afaqt/AndroidStudioProjects/Clinicea/app/src/main/res/drawable/btn_style_transparent.xml" value="0.1405" />
+        <entry key="..\:/Users/afaqt/AndroidStudioProjects/Clinicea/app/src/main/res/drawable/btn_style_transparentsquare.xml" value="0.1645" />
         <entry key="..\:/Users/afaqt/AndroidStudioProjects/Clinicea/app/src/main/res/drawable/button_background_blue.xml" value="0.1405" />
         <entry key="..\:/Users/afaqt/AndroidStudioProjects/Clinicea/app/src/main/res/drawable/buy_now_bg.xml" value="0.1405" />
         <entry key="..\:/Users/afaqt/AndroidStudioProjects/Clinicea/app/src/main/res/drawable/buy_now_bg2.xml" value="0.1405" />
@@ -30,6 +31,7 @@
         <entry key="..\:/Users/afaqt/AndroidStudioProjects/Clinicea/app/src/main/res/drawable/ic_add_img.xml" value="0.1405" />
         <entry key="..\:/Users/afaqt/AndroidStudioProjects/Clinicea/app/src/main/res/drawable/ic_back_img.xml" value="0.1405" />
         <entry key="..\:/Users/afaqt/AndroidStudioProjects/Clinicea/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.1405" />
+        <entry key="..\:/Users/afaqt/AndroidStudioProjects/Clinicea/app/src/main/res/drawable/ic_baseline_person_pin_24.xml" value="0.161" />
         <entry key="..\:/Users/afaqt/AndroidStudioProjects/Clinicea/app/src/main/res/drawable/ic_facebook.xml" value="0.1405" />
         <entry key="..\:/Users/afaqt/AndroidStudioProjects/Clinicea/app/src/main/res/drawable/ic_google_plus.xml" value="0.1405" />
         <entry key="..\:/Users/afaqt/AndroidStudioProjects/Clinicea/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1405" />
@@ -53,21 +55,32 @@
         <entry key="..\:/Users/afaqt/AndroidStudioProjects/Clinicea/app/src/main/res/drawable/wave.xml" value="0.1405" />
         <entry key="..\:/Users/afaqt/AndroidStudioProjects/Clinicea/app/src/main/res/font/baloo.xml" value="0.234375" />
         <entry key="..\:/Users/afaqt/AndroidStudioProjects/Clinicea/app/src/main/res/layout/activity_dashboard.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/afaqt/AndroidStudioProjects/Clinicea/app/src/main/res/layout/activity_doc_appointment.xml" value="0.2" />
+        <entry key="..\:/Users/afaqt/AndroidStudioProjects/Clinicea/app/src/main/res/layout/activity_doctors_profile.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/afaqt/AndroidStudioProjects/Clinicea/app/src/main/res/layout/activity_hospitals.xml" value="0.2" />
+        <entry key="..\:/Users/afaqt/AndroidStudioProjects/Clinicea/app/src/main/res/layout/activity_hospitals_profile.xml" value="0.2006340579710145" />
         <entry key="..\:/Users/afaqt/AndroidStudioProjects/Clinicea/app/src/main/res/layout/activity_login.xml" value="0.22" />
         <entry key="..\:/Users/afaqt/AndroidStudioProjects/Clinicea/app/src/main/res/layout/activity_main.xml" value="0.10643115942028986" />
         <entry key="..\:/Users/afaqt/AndroidStudioProjects/Clinicea/app/src/main/res/layout/activity_register.xml" value="0.22" />
+        <entry key="..\:/Users/afaqt/AndroidStudioProjects/Clinicea/app/src/main/res/layout/activity_specialization_field.xml" value="0.28405797101449276" />
+        <entry key="..\:/Users/afaqt/AndroidStudioProjects/Clinicea/app/src/main/res/layout/activity_specialization_profile.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/afaqt/AndroidStudioProjects/Clinicea/app/src/main/res/layout/doctorsappointmentlayout.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/afaqt/AndroidStudioProjects/Clinicea/app/src/main/res/layout/fragment_blank.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/afaqt/AndroidStudioProjects/Clinicea/app/src/main/res/layout/fragment_blank2.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/afaqt/AndroidStudioProjects/Clinicea/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/Users/afaqt/AndroidStudioProjects/Clinicea/app/src/main/res/layout/hospital_layout.xml" value="0.33" />
+        <entry key="..\:/Users/afaqt/AndroidStudioProjects/Clinicea/app/src/main/res/layout/labs_layout.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/afaqt/AndroidStudioProjects/Clinicea/app/src/main/res/layout/text3gradient.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/afaqt/AndroidStudioProjects/Clinicea/app/src/main/res/menu/bottom_nav_menu.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/afaqt/AndroidStudioProjects/Clinicea/cliniceadoctor/src/main/res/drawable/button_background_blue.xml" value="0.1405" />
         <entry key="..\:/Users/afaqt/AndroidStudioProjects/Clinicea/cliniceadoctor/src/main/res/drawable/text2gradient.xml" value="0.1645" />
         <entry key="..\:/Users/afaqt/AndroidStudioProjects/Clinicea/cliniceadoctor/src/main/res/drawable/text3_shape.xml" value="0.1" />
         <entry key="..\:/Users/afaqt/AndroidStudioProjects/Clinicea/cliniceadoctor/src/main/res/drawable/wave.xml" value="0.1405" />
+        <entry key="..\:/Users/afaqt/AndroidStudioProjects/Clinicea/cliniceadoctor/src/main/res/layout/activity_dashboard.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/afaqt/AndroidStudioProjects/Clinicea/cliniceadoctor/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/afaqt/AndroidStudioProjects/Clinicea/cliniceadoctor/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/afaqt/AndroidStudioProjects/Clinicea/cliniceadoctor/src/main/res/layout/activity_registration.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/afaqt/AndroidStudioProjects/Clinicea/cliniceadoctor/src/main/res/layout/fragment_blank.xml" value="0.11594202898550725" />
       </map>
     </option>
   </component>

@@ -18,10 +18,9 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardElevation="4dp"
-
-            app:cardCornerRadius="8dp"
-            android:elevation="9dp"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="6dp"
+            android:elevation="6dp"
             android:padding="12dp"
             android:layout_marginTop="18dp"
             android:layout_marginBottom="4dp"
@@ -77,9 +76,9 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardElevation="4dp"
-            app:cardCornerRadius="8dp"
-            android:elevation="9dp"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="6dp"
+            android:elevation="6dp"
             android:padding="12dp"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="4dp"
@@ -128,9 +127,10 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardElevation="4dp"
+            app:cardElevation="2dp"
+            android:elevation="6dp"
             android:layout_marginTop="20dp"
-            app:cardCornerRadius="8dp"
+            app:cardCornerRadius="6dp"
             android:layout_marginLeft="4dp"
             android:layout_marginRight="4dp"
             android:padding="12dp">
@@ -160,11 +160,13 @@
                     android:rowCount="1">
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="170dp"
+                        android:id="@+id/phy_Consultant"
+                        android:layout_width="160dp"
                         android:layout_height="190dp"
                         android:layout_marginRight="13dp"
-                        app:cardElevation="5dp"
-                        app:cardBackgroundColor="#FAFAFA"
+                        app:cardElevation="8dp"
+                        android:elevation="7dp"
+                        app:cardBackgroundColor="#F2EEFF"
                         app:cardCornerRadius="6dp"
                         android:layout_gravity="center"
                         android:padding="4dp">
@@ -172,13 +174,14 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:padding="2dp"
                             android:orientation="vertical">
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Physical Consultant"
                                 android:layout_marginTop="5dp"
-                                android:textSize="17dp"
+                                android:textSize="16dp"
                                 android:layout_gravity="center"
                                 android:textColor="@color/jerBlue2" />
 <!--                            <Button-->
@@ -203,10 +206,11 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="170dp"
                         android:layout_height="190dp"
-                        app:cardElevation="5dp"
+                        app:cardElevation="8dp"
                         app:cardCornerRadius="6dp"
-                        app:cardBackgroundColor="#FAFAFA"
-                        android:elevation="4dp"
+                        android:layout_marginRight="20dp"
+                        app:cardBackgroundColor="#FFF7DF"
+                        android:elevation="7dp"
                         android:padding="4dp">
 
                         <LinearLayout
@@ -219,7 +223,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="Video Consultant"
                                 android:layout_marginTop="5dp"
-                                android:textSize="17dp"
+                                android:textSize="16dp"
                                 android:layout_gravity="center"
                                 android:textColor="@color/jerBlue2"
                                 />
@@ -268,7 +272,7 @@
                 app:cardCornerRadius="4dp"
                 android:padding="4dp"
                 app:cardBackgroundColor="#FAFAFA"
-                android:layout_marginTop="240dp"
+                android:layout_marginTop="250dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginBottom="18dp">
@@ -314,9 +318,9 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardElevation="4dp"
-            app:cardCornerRadius="8dp"
-            android:elevation="9dp"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="6dp"
+            android:elevation="6dp"
             android:padding="12dp"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="4dp"
@@ -361,11 +365,13 @@
                         android:src="@drawable/hospital" />
 
                     <Button
+                        android:id="@+id/btn_hospitals"
                         android:layout_width="120dp"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/desHosp"
                         android:layout_marginStart="5dp"
                         android:layout_marginTop="5dp"
+
                         android:layout_marginEnd="5dp"
                         android:layout_marginBottom="5dp"
                         android:background="@drawable/button_background_blue"

@@ -24,6 +24,7 @@
 
     //other App
     <color name="mainColorBlue">#000066</color>
+    <color name="mainColorWhite">#F3F3F3</color>
     <color name="mainColorYellow">#ffbf00</color>
     <color name="colorPrimary">#FFFFFF</color>
     <color name="colorPrimaryDark">#000</color>
