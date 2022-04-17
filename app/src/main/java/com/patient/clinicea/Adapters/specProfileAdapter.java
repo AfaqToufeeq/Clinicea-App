@@ -73,7 +73,11 @@ public class specProfileAdapter extends BaseAdapter {
         btn_bookAppointment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                context.startActivity(new Intent(context.getApplicationContext(), doc_appointment.class));
+               Intent intent = new Intent(context.getApplicationContext(),doc_appointment.class);
+                intent.putExtra("name",name.get(i).toString());
+                intent.putExtra("degree",degree.get(i).toString());
+                context.startActivity(intent);
+
             }
         });
 

@@ -70,7 +70,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="630dp"
         android:layout_marginBottom="20dp">
       <LinearLayout
           android:layout_width="match_parent"
@@ -136,7 +136,7 @@
 
 
                   <TextView
-                      android:id="@+id/professionTV"
+                      android:id="@+id/degreeTV"
                       android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
                       android:layout_below="@id/nameTV"
@@ -150,7 +150,7 @@
                       android:id="@+id/hospAddressTV"
                       android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
-                      android:layout_below="@id/professionTV"
+                      android:layout_below="@id/degreeTV"
                       android:layout_marginStart="8dp"
                       android:layout_marginTop="4dp"
                       android:layout_toEndOf="@id/imageView"
@@ -178,25 +178,196 @@
                   android:layout_margin="6dp"
                   android:padding="6dp"
                   android:layout_marginTop="4dp">
+                  <TextView
+                      android:id="@+id/appointmentSlotTV"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Appointment"
+                      android:textColor="@color/jerBlue2"
+                      android:textSize="16dp" />
 
                   <RadioGroup
-                      android:id="@+id/radioGroup"
-                      android:layout_width="wrap_content"
+                      android:id="@+id/radioGroupCheck"
+                      android:layout_width="match_parent"
                       android:layout_height="wrap_content"
-                      android:layout_marginLeft="20dp"
-                      >
+                      android:layout_marginTop="10dp"
+                      android:layout_below="@id/appointmentSlotTV"
+                      android:layout_marginLeft="20dp">
+
                       <RadioButton
                           android:id="@+id/selfRadioButton"
                           android:layout_width="wrap_content"
                           android:layout_height="wrap_content"
-                          android:text="For Myself"
-                        />
+                          android:text="For Myself" />
+
+                      <LinearLayout
+                          android:id="@+id/linearLayoutMyself"
+                          android:layout_width="match_parent"
+                          android:visibility="gone"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:animateLayoutChanges="true"
+                          >
+                          <LinearLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:padding="4dp"
+                              android:orientation="horizontal">
+                              <TextView
+                                  android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:layout_weight="3"
+                                  android:padding="5dp"
+                                  android:textSize="14dp"
+                                  android:text="Name : "
+                                  android:textColor="@color/teal_700" />
+                              <TextView
+                                  android:id="@+id/nameTextView"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:layout_weight="1"
+                                  android:padding="5dp"
+                                  android:hint="Name Here"
+                                  android:textSize="14dp"
+
+                                  android:textColor="@android:color/darker_gray" />
+                          </LinearLayout>
+                          <LinearLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginTop="1.5dp"
+                              android:padding="4dp"
+                              android:orientation="horizontal">
+                              <TextView
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_weight="3"
+                                  android:padding="5dp"
+                                  android:text="Contact : "
+                                  android:textSize="14dp"
+                                  android:textColor="@color/teal_700" />
+                              <TextView
+                                  android:id="@+id/phone"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_weight="1"
+                                  android:padding="5dp"
+                                  android:textSize="14dp"
+                                  android:hint="+92 322*******"
+                                  android:textColor="@android:color/darker_gray" />
+                          </LinearLayout>
+                          <LinearLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginTop="1.5dp"
+                              android:padding="4dp"
+                              android:orientation="horizontal">
+                              <TextView
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_weight="3"
+                                  android:padding="5dp"
+                                  android:text="CNIC : "
+                                  android:textSize="14dp"
+                                  android:textColor="@color/teal_700" />
+                              <TextView
+                                  android:id="@+id/cnic"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_weight="1"
+                                  android:padding="5dp"
+                                  android:textSize="14dp"
+                                  android:hint="Enter CNIC withouut dashes"
+                                  android:textColor="@android:color/darker_gray" />
+                          </LinearLayout>
+                      </LinearLayout>
+
                       <RadioButton
                           android:id="@+id/otherRadioButton"
                           android:layout_width="wrap_content"
                           android:layout_height="wrap_content"
-                          android:text="For Someone Else"
-                        />
+                          android:text="For Someone Else" />
+
+                      <LinearLayout
+                          android:id="@+id/linearLayoutSomoneElse"
+                          android:visibility="gone"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:animateLayoutChanges="true"
+                          >
+                          <LinearLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:padding="4dp"
+                              android:orientation="horizontal">
+                              <TextView
+                                  android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:layout_weight="3"
+                                  android:padding="5dp"
+                                  android:textSize="14dp"
+                                  android:text="Name : "
+                                  android:textColor="@color/teal_700" />
+                              <EditText
+                                  android:id="@+id/PatientnameTV"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:layout_weight="1"
+                                  android:padding="5dp"
+                                  android:hint="Patient's Name Here"
+                                  android:textSize="14dp"
+                                  android:textColor="@android:color/darker_gray" />
+                          </LinearLayout>
+                          <LinearLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginTop="1.5dp"
+                              android:padding="4dp"
+                              android:orientation="horizontal">
+                              <TextView
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_weight="3"
+                                  android:padding="5dp"
+                                  android:text="Contact : "
+                                  android:textSize="14dp"
+                                  android:textColor="@color/teal_700" />
+                              <EditText
+                                  android:id="@+id/phonePatientTV"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_weight="1"
+                                  android:padding="5dp"
+                                  android:textSize="14dp"
+                                  android:hint="Contact Number Here"
+                                  android:textColor="@android:color/darker_gray" />
+                          </LinearLayout>
+                          <LinearLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginTop="1.5dp"
+                              android:padding="4dp"
+                              android:orientation="horizontal">
+                              <TextView
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_weight="3"
+                                  android:padding="5dp"
+                                  android:text="Relation : "
+                                  android:textSize="14dp"
+                                  android:textColor="@color/teal_700" />
+                              <EditText
+                                  android:id="@+id/relationTV"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_weight="1"
+                                  android:padding="5dp"
+                                  android:textSize="14dp"
+                                  android:hint="Relation with patient"
+                                  android:textColor="@android:color/darker_gray" />
+                          </LinearLayout>
+                      </LinearLayout>
                   </RadioGroup>
 
 
@@ -209,7 +380,7 @@
               android:layout_height="wrap_content"
               app:cardBackgroundColor="@color/white"
               app:cardCornerRadius="6dp"
-              android:layout_marginBottom="2dp"
+              android:layout_marginBottom="5dp"
               android:elevation="8dp"
               app:cardElevation="2dp"
               android:layout_marginTop="2dp">
@@ -243,7 +414,7 @@
                       <RadioButton
                           android:id="@+id/morningRadioButton"
                           android:layout_width="wrap_content"
-
+                          android:checked="true"
                           android:layout_height="20dp" />
 
                       <RadioButton
@@ -261,18 +432,17 @@
 
                   </RadioGroup>
 
-
                   <Spinner
                       android:id="@+id/morningSpinner"
                       android:layout_width="200dp"
-                      android:gravity="center"
-                      android:textAlignment="center"
-                      android:layout_gravity="center"
-                      android:layout_marginTop="30dp"
                       android:layout_height="wrap_content"
+                      android:layout_gravity="center"
                       android:layout_marginLeft="17dp"
+                      android:layout_marginTop="30dp"
                       android:layout_toRightOf="@id/radioGroupMorning"
-                      android:spinnerMode="dropdown" />
+                      android:gravity="center"
+                      android:spinnerMode="dropdown"
+                      android:textAlignment="center" />
 
                   <TextView
                       android:id="@+id/M.S"
@@ -380,9 +550,72 @@
 
               </RelativeLayout>
 
-
           </androidx.cardview.widget.CardView>
       </LinearLayout>
     </ScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:cardCornerRadius="8dp"
+        android:layout_marginTop="3dp"
+        app:cardElevation="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/date2TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/btn_style_transparentsquare"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:hint="Date"
+                    android:drawableLeft="@drawable/clock_icon"
+                    android:paddingLeft="5dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/jerBlue2"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/refresh"
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="15dp"
+                    android:visibility="invisible"
+                    android:layout_weight="3"
+                    android:src="@drawable/ic_baseline_refresh_24"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/confirmBookingBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/open_sans_semibold"
+                android:elevation="16dp"
+                android:textColor="@color/white"
+                android:letterSpacing="0.1"
+                android:layout_marginTop="10dp"
+                android:padding="3dp"
+                android:background="@drawable/btn_style3"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="Confirm Booking" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
 
 </LinearLayout>
