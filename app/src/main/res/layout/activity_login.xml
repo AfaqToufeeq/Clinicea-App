@@ -216,7 +216,7 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="18dp"
                 android:layout_gravity="end"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="5dp"
@@ -280,16 +280,21 @@
                 android:layout_marginTop="20dp"
                 android:gravity="center">
 
-                <ImageView
+                <Button
+                    android:id="@+id/E_docCareBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_facebook" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:src="@drawable/ic_google_plus" />
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/btn_style3_orange"
+                    android:padding="12dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/aclonica"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="Click here for E.Doctor Care"
+                    android:textColor="@color/jerBlue2"
+                    android:textSize="15dp" />
             </LinearLayout>
 
         </LinearLayout>

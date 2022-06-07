@@ -49,28 +49,27 @@
          android:layout_height="match_parent"
          android:layout_gravity="center">
 
-         <TextView
+         <Spinner
              android:id="@+id/profile"
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
              android:layout_alignParentRight="true"
              android:layout_marginRight="20dp"
-             android:fontFamily="@font/poppins_semibold"
              android:focusable="true"
+             android:fontFamily="@font/poppins_semibold"
              android:padding="4dp"
              android:text="Sign Up"
-             android:textSize="16dp"
-            />
+             android:textSize="16dp" />
      </RelativeLayout>
     </LinearLayout>
     </androidx.cardview.widget.CardView>
 
     <FrameLayout
         android:id="@+id/frameLayout"
-        android:layout_below="@id/card1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/bottomNavBar" />
+        android:layout_above="@id/bottomNavBar"
+        android:layout_below="@id/card1" />
 
 
         <com.google.android.material.bottomnavigation.BottomNavigationView

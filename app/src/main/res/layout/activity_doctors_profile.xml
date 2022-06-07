@@ -41,7 +41,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_semibold"
                 android:gravity="center"
-                android:text="Doctor"
+                android:text="Appointment"
                 android:textColor="@color/jerBlue2"
                 android:textSize="20dp"
                 android:textStyle="bold" />
@@ -51,7 +51,7 @@
                 android:layout_weight="0"
                 android:fontFamily="@font/poppins_semibold"
                 android:gravity="center"
-                android:text=" profile"
+                android:text=" Form"
                 android:layout_marginRight="80dp"
                 android:textColor="@color/mainColorYellow"
                 android:textSize="20dp"
@@ -68,9 +68,10 @@
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
-   <ScrollView
+   <LinearLayout
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
+       android:orientation="vertical"
        android:layout_marginBottom="20dp">
        <androidx.cardview.widget.CardView
            android:layout_width="match_parent"
@@ -177,7 +178,7 @@
 
 
                    <TextView
-                       android:id="@+id/textView3"
+                       android:id="@+id/hospital"
                        android:layout_width="match_parent"
                        android:layout_height="wrap_content"
                        android:layout_weight="1"
@@ -188,7 +189,7 @@
                        android:layout_margin="3dp"/>
 
                    <TextView
-                       android:id="@+id/textView5"
+                       android:id="@+id/experience"
                        android:layout_width="match_parent"
                        android:layout_height="wrap_content"
                        android:padding="3dp"
@@ -204,6 +205,295 @@
 
 
        </androidx.cardview.widget.CardView>
-   </ScrollView>
+   </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:ems="10"
+                android:layout_marginLeft="20dp"
+                android:text="Professional Membership"
+                android:textColor="@color/jerBlue2"
+                android:inputType="text"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@color/jerBlue2" />
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="16dp">
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginHorizontal="12dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:background="#ffff"
+                            android:orientation="vertical"
+                            android:outlineSpotShadowColor="@color/purple_500"
+                            android:padding="10dp">
+
+
+                            <TextView
+                                android:id="@+id/proTv"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:ems="10"
+                                android:text="Description"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+
+                    </ScrollView>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:layout_marginLeft="20dp"
+                android:text="About"
+                android:textColor="@color/jerBlue2"
+                android:inputType="text"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@color/jerBlue2" />
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="16dp">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:layout_marginHorizontal="12dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:background="#ffff"
+                            android:orientation="vertical"
+                            android:outlineSpotShadowColor="@color/purple_500"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/aboutTV"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:ems="10"
+                                android:text="About"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+                    </ScrollView>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:layout_marginLeft="20dp"
+                android:text="Online Fee"
+                android:textColor="@color/jerBlue2"
+                android:inputType="text"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@color/jerBlue2" />
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="16dp">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginHorizontal="12dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:background="#ffff"
+                            android:orientation="vertical"
+                            android:outlineSpotShadowColor="@color/purple_500"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/onlineFeeTV"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:ems="10"
+                                android:text="Online Fee"
+                                android:textSize="18sp" />
+
+
+                        </LinearLayout>
+                    </ScrollView>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <Button
+                android:id="@+id/onlineAppoint_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_style3_cornor"
+                android:padding="18dp"
+                android:textAllCaps="false"
+                android:text="Book Video Consultation"
+                android:onClick="btn_onlinePayment"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:layout_marginLeft="20dp"
+                android:text="Physical Fee"
+                android:textColor="@color/jerBlue2"
+                android:inputType="text"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@color/jerBlue2" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="16dp">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginHorizontal="12dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:background="#ffff"
+                            android:orientation="vertical"
+                            android:outlineSpotShadowColor="@color/purple_500"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/physicalFeeTV"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:ems="10"
+                                android:text="Physical Fee"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+                    </ScrollView>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/physicalAppoint_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_yellow_cornor"
+                android:padding="18dp"
+                android:textAllCaps="false"
+                android:text="Book Physical Appointment"
+                android:onClick="btn_onlinePayment"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

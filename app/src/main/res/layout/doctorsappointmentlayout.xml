@@ -127,7 +127,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="line 3"
+                android:text="100% Satisfied Patients"
                 android:textSize="15sp"
                 android:textStyle="bold"
                 android:layout_margin="3dp"/>
@@ -137,7 +137,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="3dp"
-                android:text="line 5"
+                android:text="Under 5 years Experience"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:textSize="15sp"

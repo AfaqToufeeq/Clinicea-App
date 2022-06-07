@@ -153,10 +153,10 @@
                       android:layout_below="@id/degreeTV"
                       android:layout_marginStart="8dp"
                       android:layout_marginTop="4dp"
+                      android:layout_marginBottom="13dp"
                       android:layout_toEndOf="@id/imageView"
                       android:text="Hospital Address"
-                      android:textSize="15sp"
-                      android:layout_marginBottom="13dp"/>
+                      android:textSize="15sp" />
 
               </RelativeLayout>
 
@@ -277,7 +277,7 @@
                                   android:layout_weight="1"
                                   android:padding="5dp"
                                   android:textSize="14dp"
-                                  android:hint="Enter CNIC withouut dashes"
+                                  android:hint="CNIC withouut dashes"
                                   android:textColor="@android:color/darker_gray" />
                           </LinearLayout>
                       </LinearLayout>
@@ -547,6 +547,31 @@
                       android:textSize="16dp"
                       android:visibility="gone"
                       android:textStyle="bold" />
+
+                  <RadioGroup
+                      android:id="@+id/paymentRadioGroup"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@id/dateTV"
+                      android:layout_marginLeft="20dp"
+                      android:layout_marginTop="14dp"
+                      android:orientation="vertical"
+                      android:padding="2dp">
+
+                      <RadioButton
+                          android:id="@+id/physicalPayment"
+                          android:layout_width="wrap_content"
+                          android:layout_height="20dp"
+                          android:checked="true"
+                          android:text="Online Payment" />
+
+                      <RadioButton
+                          android:id="@+id/onlinePayment"
+                          android:layout_width="wrap_content"
+                          android:layout_height="20dp"
+                          android:layout_marginTop="10dp"
+                          android:text="Offline Payment" />
+                  </RadioGroup>
 
               </RelativeLayout>
 

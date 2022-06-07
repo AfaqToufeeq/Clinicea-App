@@ -8,12 +8,12 @@
     app:cardBackgroundColor="@color/mainColorWhite"
     tools:context=".Consultation.SpecializationFieldActivity">
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/card1"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_gravity="center"
-            app:cardElevation="4dp">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        app:cardElevation="4dp">
         <LinearLayout
             android:id="@+id/LinearLayout1"
             android:layout_width="match_parent"
@@ -64,7 +64,7 @@
                 app:srcCompat="@drawable/ic_baseline_person_pin_24" />
 
         </LinearLayout>
-        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -128,6 +128,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/d1"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -159,6 +160,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/d2"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -210,6 +212,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/d3"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -233,13 +236,14 @@
                                     android:focusable="false"
                                     android:clickable="false"
                                     android:textColor="@color/jerBlue2"
-                                    android:text="Prediatrician"
+                                    android:text="Pediatrician"
                                     android:textSize="14sp"
                                     android:textStyle="italic"/>
                             </LinearLayout>
 
 
                             <LinearLayout
+                                android:id="@+id/d4"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -259,13 +263,13 @@
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="9"
+                                    android:clickable="false"
                                     android:descendantFocusability="blocksDescendants"
                                     android:focusable="false"
-                                    android:clickable="false"
-                                    android:textColor="@color/jerBlue2"
                                     android:text="Orthopedic Surgeon"
+                                    android:textColor="@color/jerBlue2"
                                     android:textSize="14sp"
-                                    android:textStyle="italic"/>
+                                    android:textStyle="italic" />
                             </LinearLayout>
 
                         </LinearLayout>
@@ -291,6 +295,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/d5"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -321,6 +326,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/d6"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -372,6 +378,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/d7"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -402,6 +409,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/d8"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -453,6 +461,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/d9"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -483,6 +492,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/d10"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -534,6 +544,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/d11"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -564,6 +575,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/d12"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -615,6 +627,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/d13"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -645,6 +658,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/d14"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -694,6 +708,7 @@
                             android:gravity="center"
                             android:layout_weight="18">
                             <LinearLayout
+                                android:id="@+id/d15"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -724,6 +739,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/d16"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -775,6 +791,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/d17"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -805,6 +822,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/d18"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -856,6 +874,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/d19"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -886,6 +905,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/d20"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -937,6 +957,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/d21"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -967,6 +988,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/d22"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -1018,6 +1040,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/d23"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -1048,6 +1071,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/d24"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -1099,6 +1123,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/d25"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -1129,6 +1154,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/d26"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -1180,6 +1206,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/d27"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -1210,6 +1237,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/d28"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -1261,6 +1289,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/d29"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -1291,6 +1320,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/d30"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -1342,6 +1372,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/d31"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -1372,6 +1403,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/d32"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -1423,6 +1455,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/d33"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -1453,6 +1486,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/d34"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -1477,6 +1511,35 @@
                                     android:clickable="false"
                                     android:textColor="@color/jerBlue2"
                                     android:text="Physician"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/d35"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center"
+                                android:background="@color/white"
+                                android:layout_weight="18">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/dermatology"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="9"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:textColor="@color/jerBlue2"
+                                    android:text="Child Specialist"
                                     android:textSize="14sp"
                                     android:textStyle="italic"/>
                             </LinearLayout>
@@ -1543,6 +1606,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/a1"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -1573,6 +1637,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/a2"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -1624,6 +1689,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/a3"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -1654,6 +1720,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/a4"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -1705,6 +1772,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/a5"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -1735,6 +1803,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/a6"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -1758,7 +1827,7 @@
                                     android:focusable="false"
                                     android:clickable="false"
                                     android:textColor="@color/jerBlue2"
-                                    android:text="Menupause"
+                                    android:text="Menopause"
                                     android:textSize="14sp"
                                     android:textStyle="italic"/>
                             </LinearLayout>
@@ -1786,6 +1855,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/a7"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -1816,6 +1886,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/a8"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -1867,6 +1938,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/a9"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -1897,6 +1969,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/a10"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -1948,6 +2021,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/a11"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -1978,6 +2052,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/a12"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -2029,6 +2104,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/a13"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -2052,13 +2128,14 @@
                                     android:focusable="false"
                                     android:clickable="false"
                                     android:textColor="@color/jerBlue2"
-                                    android:text="diabetes Mellitus"
+                                    android:text="Diabetes Mellitus"
                                     android:textSize="14sp"
                                     android:textStyle="italic"/>
                             </LinearLayout>
 
 
                             <LinearLayout
+                                android:id="@+id/a14"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -2108,6 +2185,7 @@
                             android:gravity="center"
                             android:layout_weight="18">
                             <LinearLayout
+                                android:id="@+id/a15"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -2138,6 +2216,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/a16"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal"
@@ -2173,11 +2252,5 @@
             </androidx.cardview.widget.CardView>
         </LinearLayout>
     </ScrollView>
-
-
-
-
-
-
 
 </LinearLayout>

@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/text2gradient"
+        tools:context=".Payment.onlinePaymentConfirm">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            app:cardElevation="4dp">
+            <LinearLayout
+                android:id="@+id/LinearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:padding="5dp"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/back2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:onClick="btn_dashboard"
+                    android:layout_marginRight="70dp"
+                    app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"
+                    android:text="Confirm"
+                    android:textColor="@color/jerBlue2"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"
+                    android:text=" Details"
+                    android:layout_marginRight="80dp"
+                    android:textColor="@color/mainColorYellow"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_baseline_person_pin_24" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/half_circle"
+                    android:layout_width="50dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="left"
+                    android:background="@drawable/half_circle" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="7.3dp"
+                    android:background="@drawable/small_cicle" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="465dp"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:ems="10"
+                android:layout_marginLeft="20dp"
+                android:text="Patient Name"
+                android:textColor="@color/jerBlue2"
+                android:inputType="text"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@color/jerBlue2" />
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="16dp">
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginHorizontal="12dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:background="#ffff"
+                            android:orientation="vertical"
+                            android:outlineSpotShadowColor="@color/purple_500"
+                            android:padding="10dp">
+
+
+                            <TextView
+                                android:id="@+id/patTv"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:ems="10"
+                                android:text="Patient Name Here"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+
+                    </ScrollView>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:layout_marginLeft="20dp"
+                android:text="Doctor Name"
+                android:textColor="@color/jerBlue2"
+                android:inputType="text"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@color/jerBlue2" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="16dp">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginHorizontal="12dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:background="#ffff"
+                            android:orientation="vertical"
+                            android:outlineSpotShadowColor="@color/purple_500"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/docNameTV"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:ems="10"
+                                android:text="Doctor Name Here"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+                    </ScrollView>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:layout_marginLeft="20dp"
+                android:text="Fee Status"
+                android:textColor="@color/jerBlue2"
+                android:inputType="text"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@color/jerBlue2" />
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="16dp">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginHorizontal="12dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:background="#ffff"
+                            android:orientation="vertical"
+                            android:outlineSpotShadowColor="@color/purple_500"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/onlineFeeTV"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:ems="10"
+                                android:text="Confirmed"
+                                android:textSize="18sp" />
+
+
+                        </LinearLayout>
+                    </ScrollView>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:layout_marginLeft="20dp"
+                android:text="Time for Appointment "
+                android:textColor="@color/jerBlue2"
+                android:inputType="text"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@color/jerBlue2" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="16dp">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginHorizontal="12dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:background="#ffff"
+                            android:orientation="vertical"
+                            android:outlineSpotShadowColor="@color/purple_500"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/timeAppointTV"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:ems="10"
+                                android:text="Time"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+                    </ScrollView>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:layout_marginLeft="20dp"
+                android:text="Date for Appointment "
+                android:textColor="@color/jerBlue2"
+                android:inputType="text"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@color/jerBlue2" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="16dp">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginHorizontal="12dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:background="#ffff"
+                            android:orientation="vertical"
+                            android:outlineSpotShadowColor="@color/purple_500"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/dateAppointTV"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:ems="10"
+                                android:text="Date"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+                    </ScrollView>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/confirm_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_style3_cornor"
+        android:padding="18dp"
+        android:textAllCaps="false"
+        android:text="Proceed to HomePage "
+        android:onClick="btn_onlineConfirmPayment"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    </LinearLayout>

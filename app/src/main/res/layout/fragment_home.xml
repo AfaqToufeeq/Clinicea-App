@@ -74,6 +74,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/eDoc_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardElevation="2dp"
@@ -134,119 +135,121 @@
             android:layout_marginLeft="4dp"
             android:layout_marginRight="4dp"
             android:padding="12dp">
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:padding="6dp"
-                    android:text="Looking for a doctor"
-                    android:textColor="@color/jerBlue2"
-                    android:textSize="18dp"
-                  />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:fontFamily="@font/poppins_semibold"
+                android:padding="6dp"
+                android:text="Looking for a doctor"
+                android:textColor="@color/jerBlue2"
+                android:textSize="18dp"
+                />
 
-                <GridLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="40dp"
-                    android:alignmentMode="alignMargins"
-                    android:columnCount="2"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="12dp"
-                    android:columnOrderPreserved="false"
-                    android:rowCount="1">
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:alignmentMode="alignMargins"
+                android:columnCount="2"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="12dp"
+                android:columnOrderPreserved="false"
+                android:rowCount="1">
 
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/phy_Consultant"
-                        android:layout_width="160dp"
-                        android:layout_height="190dp"
-                        android:layout_marginRight="13dp"
-                        app:cardElevation="8dp"
-                        android:elevation="7dp"
-                        app:cardBackgroundColor="#F2EEFF"
-                        app:cardCornerRadius="6dp"
-                        android:layout_gravity="center"
-                        android:padding="4dp">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/phy_Consultant"
+                    android:layout_width="160dp"
+                    android:layout_height="190dp"
+                    android:layout_marginRight="13dp"
+                    app:cardElevation="8dp"
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:padding="2dp"
-                            android:orientation="vertical">
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Physical Consultant"
-                                android:layout_marginTop="5dp"
-                                android:textSize="16dp"
-                                android:layout_gravity="center"
-                                android:textColor="@color/jerBlue2" />
-<!--                            <Button-->
-<!--                                android:layout_width="wrap_content"-->
-<!--                                android:layout_height="40dp"-->
-<!--                                android:layout_marginTop="5dp"-->
-<!--                                android:text="Book Now"-->
-<!--                                android:textSize="10dp"-->
-<!--                                android:background="@drawable/btn_style3"-->
-<!--                                android:textColor="@color/white"/>-->
+                    android:elevation="7dp"
+                    app:cardBackgroundColor="#F2EEFF"
+                    app:cardCornerRadius="6dp"
+                    android:layout_gravity="center"
+                    android:padding="4dp">
 
-                            <ImageView
-                                android:id="@+id/btn_firstAid"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/physicalconsultant" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="2dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Physical Consultant"
+                            android:layout_marginTop="5dp"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"
+                            android:textColor="@color/jerBlue2" />
+                        <!--                            <Button-->
+                        <!--                                android:layout_width="wrap_content"-->
+                        <!--                                android:layout_height="40dp"-->
+                        <!--                                android:layout_marginTop="5dp"-->
+                        <!--                                android:text="Book Now"-->
+                        <!--                                android:textSize="10dp"-->
+                        <!--                                android:background="@drawable/btn_style3"-->
+                        <!--                                android:textColor="@color/white"/>-->
 
-
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="170dp"
-                        android:layout_height="190dp"
-                        app:cardElevation="8dp"
-                        app:cardCornerRadius="6dp"
-                        android:layout_marginRight="20dp"
-                        app:cardBackgroundColor="#FFF7DF"
-                        android:elevation="7dp"
-                        android:padding="4dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:orientation="vertical">
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Video Consultant"
-                                android:layout_marginTop="5dp"
-                                android:textSize="16dp"
-                                android:layout_gravity="center"
-                                android:textColor="@color/jerBlue2"
-                                />
-<!--                            <Button-->
-<!--                                android:layout_width="wrap_content"-->
-<!--                                android:layout_height="40dp"-->
-<!--                                android:layout_marginTop="5dp"-->
-<!--                                android:text="Book Now"-->
-<!--                                android:textSize="10dp"-->
-<!--                                android:background="@drawable/btn_style3_orange"-->
-<!--                                android:textColor="@color/white"/>-->
-
-                            <ImageView
-                                android:id="@+id/btn_video"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/videoconsultant" />
+                        <ImageView
+                            android:id="@+id/btn_firstAid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/physicalconsultant" />
 
 
-                        </LinearLayout>
+                    </LinearLayout>
 
-                    </androidx.cardview.widget.CardView>
-                </GridLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/video_Consultant"
+                    android:layout_width="170dp"
+                    android:layout_height="190dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="6dp"
+                    android:layout_marginRight="20dp"
+                    app:cardBackgroundColor="#FFF7DF"
+                    android:elevation="7dp"
+                    android:padding="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Video Consultant"
+                            android:layout_marginTop="5dp"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"
+                            android:textColor="@color/jerBlue2"
+                            />
+                        <!--                            <Button-->
+                        <!--                                android:layout_width="wrap_content"-->
+                        <!--                                android:layout_height="40dp"-->
+                        <!--                                android:layout_marginTop="5dp"-->
+                        <!--                                android:text="Book Now"-->
+                        <!--                                android:textSize="10dp"-->
+                        <!--                                android:background="@drawable/btn_style3_orange"-->
+                        <!--                                android:textColor="@color/white"/>-->
+
+                        <ImageView
+                            android:id="@+id/btn_video"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/videoconsultant" />
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </GridLayout>
 
 
             <androidx.cardview.widget.CardView
@@ -265,53 +268,7 @@
             </androidx.cardview.widget.CardView>
 
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardElevation="4dp"
-                app:cardCornerRadius="4dp"
-                android:padding="4dp"
-                app:cardBackgroundColor="#FAFAFA"
-                android:layout_marginTop="250dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginBottom="18dp">
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="6dp"
-                    android:layout_marginTop="4dp">
-
-
-                    <TextView
-                        android:id="@+id/textViewLab"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentTop="true"
-                        android:fontFamily="@font/poppins_semibold"
-                        android:padding="6dp"
-                        android:text="Looking for labs"
-                        android:textColor="@color/jerBlue2"
-                        android:textSize="18dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/textViewLab"
-                        android:padding="2dp"
-                        android:text="search for the laboratory near your \nlocality" />
-
-                    <ImageView
-                        android:id="@+id/imageViewlab"
-                        android:layout_width="85dp"
-                        android:layout_height="85dp"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerInParent="true"
-                        android:padding="2dp"
-                        android:src="@drawable/lab" />
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
 
 
         </androidx.cardview.widget.CardView>
@@ -328,58 +285,58 @@
             android:layout_marginRight="4dp">
 
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="6dp"
-                    android:layout_marginTop="4dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:layout_marginTop="4dp">
 
 
-                    <TextView
-                        android:id="@+id/textViewHospital"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentTop="true"
-                        android:fontFamily="@font/poppins_semibold"
-                        android:padding="6dp"
-                        android:text="Search Best Hospital"
-                        android:textColor="@color/jerBlue2"
-                        android:textSize="18dp" />
+                <TextView
+                    android:id="@+id/textViewHospital"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="6dp"
+                    android:text="Search Best Hospital"
+                    android:textColor="@color/jerBlue2"
+                    android:textSize="18dp" />
 
-                    <TextView
-                        android:id="@+id/desHosp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/textViewHospital"
-                        android:padding="2dp"
-                        android:text="search for the hospital near your locality" />
+                <TextView
+                    android:id="@+id/desHosp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewHospital"
+                    android:padding="2dp"
+                    android:text="search for the hospital near your locality" />
 
 
-                    <ImageView
-                        android:id="@+id/imageViewHospital"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerInParent="true"
-                        android:padding="2dp"
-                        android:src="@drawable/hospital" />
+                <ImageView
+                    android:id="@+id/imageViewHospital"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:padding="2dp"
+                    android:src="@drawable/hospital" />
 
-                    <Button
-                        android:id="@+id/btn_hospitals"
-                        android:layout_width="120dp"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/desHosp"
-                        android:layout_marginStart="5dp"
-                        android:layout_marginTop="5dp"
+                <Button
+                    android:id="@+id/btn_hospitals"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/desHosp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
 
-                        android:layout_marginEnd="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:background="@drawable/button_background_blue"
-                        android:padding="1dp"
-                        android:text="Search Now"
-                        android:textColor="#DFDFDF"
-                        android:textSize="12dp" />
-                </RelativeLayout>
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/button_background_blue"
+                    android:padding="1dp"
+                    android:text="Search Now"
+                    android:textColor="#DFDFDF"
+                    android:textSize="12dp" />
+            </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
 

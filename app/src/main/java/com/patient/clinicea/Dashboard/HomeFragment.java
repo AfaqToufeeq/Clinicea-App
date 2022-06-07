@@ -18,6 +18,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.patient.clinicea.Consultation.SpecializationFieldActivity;
+import com.patient.clinicea.Edoctor.EdoctorActivity;
 import com.patient.clinicea.Hospitals.hospitals_Activity;
 import com.patient.clinicea.R;
 
@@ -28,9 +29,10 @@ import com.patient.clinicea.R;
  */
 public class HomeFragment extends Fragment {
     Spinner citySpinner;
-    CardView phy_Consultant;
+    CardView phy_Consultant,video_Consultant;
     TextView alreadyAccount;
-    String[] city = {"Islamabad", "Rawalpindi", "Faisalabad","Lahore"};
+    CardView Edoc_btn;
+    String[] city = {"Islamabad", "Rawalpindi", "Faisalabad","Lahore", "Karachi"};
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -78,8 +80,18 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         View v= inflater.inflate(R.layout.fragment_home, container, false);
         citySpinner = v.findViewById(R.id.citySpinner);
+        Edoc_btn = v.findViewById(R.id.eDoc_btn);
         phy_Consultant = v.findViewById(R.id.phy_Consultant);
+        video_Consultant=v.findViewById(R.id.video_Consultant);
         Button btn_hopitals = v.findViewById(R.id.btn_hospitals);
+
+        Edoc_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                startActivity(new Intent(getActivity(), EdoctorActivity.class));
+            }
+        });
 
         btn_hopitals.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -95,13 +107,23 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        video_Consultant.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), SpecializationFieldActivity.class));
+            }
+        });
+
+
 
         citySpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(getActivity(),city[i] , Toast.LENGTH_LONG).show();
+                dashboardActivity.city=city[i];
+//                Toast.makeText(getActivity(),city[i] , Toast.LENGTH_LONG).show();
                 ((TextView) adapterView.getChildAt(0)).setTextColor(Color.BLACK);
                 ((TextView) adapterView.getChildAt(0)).setTextSize(16);
+
             }
 
             @Override
